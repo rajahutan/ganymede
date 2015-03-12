@@ -17,4 +17,5 @@
 
 ### Run when developing:
 - `gulp`
-- Now there is a build directory. Symlink the build directory to the wp-themes dir in your local Wordpress environment
+- Now there is a build directory. Symlink the build directory to the wp-themes dir in your local Wordpress environment    
+  For example `ln -s ~/dev/ganymede/build ~/dev/awesome.dev/wp-content/themes/ganymede`
