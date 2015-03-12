@@ -12,7 +12,8 @@
           $echo .= '<p class="the_date"><a href="/'.$date_url.'">'.the_date('d-m','','',FALSE).'</a></p>';
         }
       }
+      
+      the_content();
     ?>
-    <?php the_content(); ?>
   </div>
 </div>

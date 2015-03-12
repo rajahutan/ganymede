@@ -10,12 +10,11 @@
 ## Development instructions
 
 ### Needed on your computer:
-- Node
+- [Node](https://nodejs.org)
+- A [wp-dev-box](https://github.com/reinier/wp-dev-box) on the same level as this repository
 
 ### Run when starting:
 - `npm install`
 
 ### Run when developing:
 - `gulp`
-- Now there is a build directory. Symlink the build directory to the wp-themes dir in your local Wordpress environment    
-  For example `ln -s ~/dev/ganymede/build ~/dev/awesome.dev/wp-content/themes/ganymede`
