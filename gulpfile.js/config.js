@@ -2,10 +2,13 @@
     CONFIG
    --------------------------------------- */
 
+var title             = 'ganymede';
+
 // Project paths
 var src               = './src/';
 var build             = './build/';
 var dist              = './dist/';
+var deploy            = '/Volumes/Macintosh\ HD/Users/reinierladan/dev/sandbox/wp-dev-box/awesome.dev/wp-content/themes/';
 var node_modules      = './node_modules/';
 var bower_components  = './bower_components/';
 
@@ -38,8 +41,13 @@ module.exports = {
   watch: {
     source: {
       styles : src+'**/*.scss',
-      wptheme : [src+'/**/*.php',src+'/**/*.css',src+'screenshot.png']
+      wptheme : [src+'/**/*.php',src+'/**/*.css',src+'screenshot.png'],
+      build : build
     }
+  },
+
+  deploy: {
+    build: deploy+title+'/'
   },
 
   clean: {
