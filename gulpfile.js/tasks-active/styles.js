@@ -1,6 +1,5 @@
 var gulp      = require('gulp');
 var sass      = require('gulp-sass');
-var connect   = require('gulp-connect');
 var config    = require('../config').styles;
 
 gulp.task('styles', function() {
@@ -9,14 +8,12 @@ gulp.task('styles', function() {
     .on('error', function (err) {
       console.log(err.message);
     })
-    .pipe(gulp.dest(config.build))
-    .pipe(connect.reload());
+    .pipe(gulp.dest(config.build));
 });
 
 gulp.task('styles:dist', ['clean:dist'], function() {
   return gulp.src(config.source)
     .pipe(sass(config.sass))
     .on('error', function (err) { console.log(err.message); })
-    .pipe(gulp.dest(config.dist))
-    .pipe(connect.reload());
+    .pipe(gulp.dest(config.dist));
 });

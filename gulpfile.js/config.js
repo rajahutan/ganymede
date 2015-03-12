@@ -29,9 +29,16 @@ module.exports = {
     dist: dist+'images/'
   },
 
+  wptheme: {
+    source: [src+'/**/*.php',src+'/**/*.css',src+'screenshot.png'],
+    build: build,
+    dist: dist
+  },
+
   watch: {
     source: {
       styles : src+'**/*.scss',
+      wptheme : [src+'/**/*.php',src+'/**/*.css',src+'screenshot.png']
     }
   },
 
