@@ -17,3 +17,7 @@
 
 ### Run when developing:
 - `gulp`
+
+### Run when releasing a new version of theme:
+- `gulp release`    
+  This will build the theme to the `dist` branch. You have to push this branch manually.
