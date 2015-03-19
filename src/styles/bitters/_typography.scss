@@ -19,6 +19,19 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
+h1 {
+  font-size: 1.5em;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing;
+  padding-bottom: $base-spacing;
+  text-align: center;
+  border-bottom: 1px solid $light-gray;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
 p {
   margin: 0 0 $small-spacing;
 }
@@ -52,4 +65,5 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+  height: auto;
 }
