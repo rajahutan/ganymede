@@ -16,7 +16,9 @@
 - `npm install`
 
 ### Run when developing:
-- `gulp`
+- `gulp`    
+or
+- `gulp work` when you want to open Sublime and Google Chrome
 
 ### Run when releasing a new version of theme:
 - `gulp release`    
