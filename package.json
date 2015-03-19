@@ -11,7 +11,9 @@
     "gulp-imagemin": "^2.2.0",
     "gulp-sass": "~1.3.3",
     "imagemin-pngquant": "^4.0.0",
-    "require-dir": "^0.1.0"
+    "require-dir": "^0.1.0",
+    "gulp-shell": "^0.4.0",
+    "gulp-open": "^0.3.2"
   },
   "scripts": {
     "postinstall": "node_modules/.bin/bower install && npm install --global gulp"

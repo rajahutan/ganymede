@@ -46,6 +46,11 @@ module.exports = {
     }
   },
 
+  openbrowser: {
+    url: 'http://awesome.dev',
+    browser: 'google chrome'
+  },
+
   clean: {
     all: [build, dist, './.sass-cache/'],
     build: build,
