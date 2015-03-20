@@ -1,5 +1,7 @@
 # Ganymede — A Wordpress Theme
 
+![Ganymede Wordpress Theme Screenshot](http://static.digitalenergy.nl/ganymede.jpg)
+
 ## Download and use the theme
 
 Download here:    
