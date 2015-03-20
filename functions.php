@@ -44,15 +44,19 @@
   function addVideoWrapperToVideos($string) {
     // match any iframes
     $pattern = '~<iframe.*?</iframe>~';
-    $content = preg_replace_callback($pattern, function($matches){
-      if(strpos($matches[0], 'youtube') !== false OR strpos($matches[0], 'vimeo') !== false){
-        return '<div class="videoWrapper">' . $matches[0] . '</div>';
-      }
-
-      return $matches[0];
-    }, $string);
+    $content = preg_replace_callback(
+      $pattern,
+      'videoWrapper',
+      $string);
 
     return $content;
+  }
+
+  function videoWrapper($matches){
+    if(strpos($matches[0], 'youtube') !== false || strpos($matches[0], 'vimeo') !== false){
+      return '<div class="videoWrapper">' . $matches[0] . '</div>';
+    }
+    return $matches[0];
   }
 
   add_filter( 'the_content', 'addVideoWrapperToVideos' );
