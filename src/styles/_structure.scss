@@ -18,9 +18,9 @@ section.content {
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
+  padding-top: $base-spacing;
   height: 0;
-  margin-bottom: 1em;
+  margin-bottom: $base-spacing;
 }
 
 .videoWrapper iframe {

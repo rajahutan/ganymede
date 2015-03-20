@@ -10,11 +10,12 @@ header {
     margin-bottom: 0;
 
     a {
-      color: $alt-action-color;
+      color: $header-title;
     }
   }
 
   .tagline {
+    -webkit-font-smoothing: subpixel-antialiased;
     margin-bottom: $base-spacing;
     font-style: italic;
     color: $base-background-color;
