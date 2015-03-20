@@ -1,9 +1,10 @@
 .entry {
   margin-bottom: $base-spacing * 5;
-  padding: $base-spacing;
-  
+  padding: 0;
+
   @include media($medium-screen-up) {
-    border: 1px solid tint($light-gray,50%);
+    padding: $base-spacing;
+    border: 1px solid tint($base-border-color,50%);
     margin-bottom: $base-spacing * 4;
   }
 
@@ -16,7 +17,7 @@
     background-color: tint(#ff9,50%);
     padding: 1em;
     border: none;
-    border-left: 10px solid $light-gray;
+    border-left: 10px solid $base-border-color;
 
     .post-title {
       display:none;
@@ -26,14 +27,14 @@
 
 .featured-image {
   text-align: center;
-  background-color: tint($light-gray,80%);
+  background-color: tint($base-border-color,80%);
   padding: $small-spacing 0;
   
   @include media($medium-screen-up) {
     background-color: transparent;
     margin: $base-spacing * -1;
     margin-bottom: $base-spacing;
-    border-bottom: 1px solid tint($light-gray,50%);
+    border-bottom: 1px solid tint($base-border-color,50%);
   }
 
   margin-bottom: $base-spacing;

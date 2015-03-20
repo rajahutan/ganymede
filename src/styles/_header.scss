@@ -1,21 +1,23 @@
 header {
-  margin-top: $base-spacing;
+  margin-top: 0;
   margin-bottom: $base-spacing;
+  padding-top: $base-spacing;
   padding-bottom: $base-spacing;
-  border-bottom: 1px dashed $light-gray;
   text-align: center;
-
-  @include media($medium-screen-up) {
-    border-bottom: none;
-  }
+  background-color: $header-background-color;
 
   h1 {
     margin-bottom: 0;
+
+    a {
+      color: $alt-action-color;
+    }
   }
 
   .tagline {
     margin-bottom: $base-spacing;
     font-style: italic;
+    color: $base-background-color;
   }
 
   &.no-tagline {

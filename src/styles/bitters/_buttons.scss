@@ -4,10 +4,10 @@ a.action,
 li.menu-item a {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
-  background-color: $action-color;
+  background-color: $alt-action-color;
   border-radius: $base-border-radius;
   border: none;
-  color: #fff;
+  color: $base-background-color;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -23,7 +23,7 @@ li.menu-item a {
   &:hover,
   &:focus {
     background-color: $alt-color;
-    color: #fff;
+    color: $base-background-color;
   }
 
   &:disabled {
