@@ -1,10 +1,12 @@
 # Ganymede — A Wordpress Theme
 
-## Tools for development
-- [Sass](http://sass-lang.com) parser with:
-  - [Bourbon](http://bourbon.io)
-  - [Neat](http://neat.bourbon.io)
-- Optimize images
+## Download and use the theme
+
+Download here:    
+- [Download Ganymede Wordpress theme](https://github.com/reinier/ganymede/archive/release.zip)
+
+Upload to your wp-themes directory and activate the theme.
+
 
 ## Development instructions
 
@@ -22,4 +24,4 @@ or
 
 ### Run when releasing a new version of theme:
 - `gulp release`    
-  This will build the theme to the `dist` branch. You have to push this branch manually.
+  This will build the theme and pushes it to the online `release` branch.
