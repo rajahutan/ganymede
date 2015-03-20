@@ -1,6 +1,7 @@
 #{$all-button-inputs},
 button,
-a.action {
+a.action,
+li.menu-item a {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
   background-color: $action-color;
@@ -21,7 +22,7 @@ a.action {
 
   &:hover,
   &:focus {
-    background-color: darken($action-color, 15%);
+    background-color: $alt-color;
     color: #fff;
   }
 

@@ -1,0 +1,41 @@
+.entry {
+  margin-bottom: $base-spacing * 5;
+  padding: $base-spacing;
+  
+  @include media($medium-screen-up) {
+    border: 1px solid tint($light-gray,50%);
+    margin-bottom: $base-spacing * 4;
+  }
+
+  .post-title a {
+    color: $alt-color;
+  }
+
+  /* Post format `link` */
+  &.format-link {
+    background-color: tint(#ff9,50%);
+    padding: 1em;
+    border: none;
+    border-left: 10px solid $light-gray;
+
+    .post-title {
+      display:none;
+    }
+  }
+}
+
+.featured-image {
+  text-align: center;
+  background-color: tint($light-gray,80%);
+  padding: $small-spacing 0;
+  
+  @include media($medium-screen-up) {
+    background-color: transparent;
+    margin: $base-spacing * -1;
+    margin-bottom: $base-spacing;
+    border-bottom: 1px solid tint($light-gray,50%);
+  }
+
+  margin-bottom: $base-spacing;
+  line-height: 0;
+}

@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,700,900);
+
 // Typography
 $base-font-family: 'Raleway', sans-serif;
 $heading-font-family: $base-font-family;
@@ -17,6 +19,7 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477dca;
+$orange: #FB8A24;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
@@ -24,6 +27,7 @@ $light-gray: #ddd;
 // Font Colors
 $base-font-color: $dark-gray;
 $action-color: $blue;
+$alt-color: $orange;
 
 // Border
 $base-border-color: $light-gray;
