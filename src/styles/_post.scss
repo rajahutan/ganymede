@@ -58,6 +58,11 @@
     .post-title {
       display: none;
     }
+
+    a {
+      color: $base-background-color;
+      text-decoration: underline;
+    }
   }
 }
 

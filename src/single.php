@@ -9,6 +9,9 @@
     <h2>Not Found</h2>
   <?php endif; ?>
 </div>
+
+<?php include('sidebar.php'); ?>
+
 <?php get_footer(); ?>
 
 

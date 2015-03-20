@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<div id="content">
+<?php include('sidebar.php'); ?>
+
+<div class="posts">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php include (TEMPLATEPATH . '/_post.php' ); ?>
     <?php endwhile; ?>

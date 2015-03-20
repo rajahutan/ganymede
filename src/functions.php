@@ -37,6 +37,30 @@
  
   add_action('customize_register', 'ganymede_customize_register');
 
+  if (function_exists('register_sidebar')) {
+    register_sidebar(array(
+      'name' => 'Homepage Widgets',
+      'id'   => 'homepage-widgets',
+      'description'   => 'These are widgets for the homepage.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>'
+    ));
+  }
+
+  if (function_exists('register_sidebar')) {
+    register_sidebar(array(
+      'name' => 'Post Widgets',
+      'id'   => 'post-widgets',
+      'description'   => 'These are widgets for a post page.',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2>',
+      'after_title'   => '</h2>'
+    ));
+  }  
+
   // --------------------------------------- 
   /* Common purpose functions */
   // --------------------------------------- 
