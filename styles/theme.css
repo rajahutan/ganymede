@@ -287,6 +287,9 @@ header {
       margin-right: -1.5em; }
     .entry.format-video .post-title {
       display: none; }
+    .entry.format-video a {
+      color: #fff;
+      text-decoration: underline; }
 
 .featured-image {
   text-align: center;
@@ -356,3 +359,14 @@ footer {
   padding-bottom: 3em;
   border-top: 1px solid #DDD;
   text-align: center; }
+
+.widget_text {
+  margin-bottom: 7.5em;
+  background-color: #efefef;
+  padding: 1em;
+  border: none;
+  border: 1px solid #DDD;
+  line-height: 2em;
+  text-align: center; }
+  .widget_text h2 {
+    display: none; }
