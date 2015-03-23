@@ -4,6 +4,8 @@
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'post-formats', array( 'aside', 'link', 'video' ) );
     register_nav_menu('header-nav',__( 'Header navigation' ));
+    add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'title-tag' );
   }
 
   add_action( 'init', 'theme_features' );
