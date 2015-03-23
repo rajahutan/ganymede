@@ -20,7 +20,7 @@
   <meta name="DC.subject" content="<?php bloginfo('description'); ?>">
   <meta name="DC.creator" content="Reinier Ladan">
 
-  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/styles/theme.css">
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
 
   <?php wp_head(); ?>
 
