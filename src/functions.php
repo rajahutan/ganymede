@@ -8,7 +8,7 @@
     add_theme_support( 'title-tag' );
   }
 
-  add_action( 'init', 'theme_features' );
+  add_action( 'after_setup_theme', 'theme_features', 10 );
 
   function ganymede_customize_register($wp_customize){
     
