@@ -4,7 +4,13 @@
       echo '<div class="featured-image">';
       the_post_thumbnail();
       echo '</div>';
-    } 
+    }
+
+    if(get_post_format() == FALSE){
+  ?>
+    <p class="post-date"><?php the_time('l j F, Y') ?></p>
+  <?php
+    }
   ?>
   <h2 class="post-title"><a href="<?php echo get_permalink(); ?>"><?php echo the_title('','',FALSE); ?></a></h2>
   <?php
